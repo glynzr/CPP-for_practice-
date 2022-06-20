@@ -1,0 +1,15 @@
+#include <iostream>
+#include <cmath>
+#include <cstdio>
+using namespace std;
+int main(){
+   double pi=2*acos(0.0);
+   float a,b,alpha;
+   cin>>a>>b>>alpha;
+
+   printf("%.2f \n",a*b*sin(alpha*pi/180));
+   return 0;
+
+   
+   
+}
