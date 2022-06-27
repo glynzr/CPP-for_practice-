@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int su=0,x;
+    while (true){
+        cin>>x;
+        if (x==-1){
+            break;
+        }
+        su+=x;
+    }
+    string result=(su%2==0) ? "even" : "odd";
+    cout<<result<<endl;
+    return 0;
+    
+}
