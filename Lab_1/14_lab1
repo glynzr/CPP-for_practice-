@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cstdio>
+#include <stdlib.h>
+#include <time.h>
+#include <cmath>
+using namespace std;
+int main (){
+    double x,y,a;
+    srand(time(0));
+    x= ((double) rand() / (RAND_MAX));
+    y= ((double) rand() / (RAND_MAX));
+    a=sqrt(1+pow(y,2))*sin(pow(x,2)/(1+abs(y)));
+    printf("%.3f\n",a);
+
+    return 0;
+}
