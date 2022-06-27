@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cmath>
+#include <stdlib.h>
+#include <time.h>
+using namespace std;
+int main(){
+    srand(time(0));
+    int a;
+    a=rand()%10000+10000;
+    cout<<a<<endl;
+    while (a>0){
+        cout<< a%10 <<" " <<pow(a%10,2)<<endl;
+        a=(a-a%10)/10;
+    }
+    return 0;
+
+}
