@@ -1,0 +1,38 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+using namespace std;
+int reverseString(string n){
+    string x="";
+    for (int i=n.length()-1;i>-1;i--){
+        x+=n[i];
+    }
+    int y=stoi(x);
+    return y;
+}
+
+string toBinary(int n){
+    string x="";
+    while (n>0){
+        x+=to_string(n%2);
+        n=(n-n%2)/2;
+    }
+    return x;
+}
+
+
+int main(){
+    int a;
+    while (true){
+        cout<<"Enter the decimal number:";
+        cin>>a;
+        if (a>0){
+            break;
+        } 
+    }
+    cout<<a<<endl;
+    cout<<reverseString(toBinary(a))<<endl;
+    
+    
+}
+
