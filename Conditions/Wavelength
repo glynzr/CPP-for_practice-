@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int a;
+    cout<<"Enter the wavelength in nm: ";
+    cin>>a;
+    if (380<=a and a<=750){
+        if (380<=a and a<450){
+            cout<<"The relevant color is Violet"<<endl;
+        }else if (450<=a and a<495){
+            cout<<"The relevant color is Blue"<<endl;
+        }else if (495<=a and a<570){
+            cout<<"The relevant color is Green"<<endl;
+        }else if (570<=a and a<590){
+            cout<<"The relevant color is Yellow"<<endl;
+        }else if (590<=a and a<620){
+            cout<<"The relevant color is Orange"<<endl;
+        }else{
+            cout<<"The relevant color is Red"<<endl;
+        }
+    }else{
+        cout<<"Invalid input"<<endl;
+    }
+}
+
