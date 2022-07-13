@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath>
+#include <cstdio>
+using namespace std;
+int isCurzon(int x){
+    if (((int)pow(2,x)+1)%(2*x+1)==0){
+        return true;
+    }else {
+        return false;
+    }
+
+}
+int main(){
+    int n;
+    cin>>n;
+    if (isCurzon(n)){
+        printf("%d is a Curzon number\n",n);
+    }else{
+        printf("%d is not a Curzon number\n",n);
+    }
+
+}
