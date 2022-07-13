@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int myFunc(int x,int y){
+    return y*y==x;
+}
+int main(){
+    int n,k;
+    cin>>n>>k;
+    if (myFunc(n,k)){
+        cout<<"True"<<endl;
+    }else{
+        cout<<"False"<<endl;
+    }
+    
+}
