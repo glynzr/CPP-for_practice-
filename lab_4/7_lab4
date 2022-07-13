@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cmath>
+#include <string>
+using namespace std;
+int isDisarium(int x){
+    int su=0,y=x;
+    while (x>0){
+        string a=to_string(x);
+        su+= pow(x%10,a.length());
+        x/=10;
+    }
+    return su==y;
+
+}
+int main(){
+    int N;
+    cin>>N;
+    if (isDisarium(N)){
+        cout<<N<<" is a Disarium number"<<endl;
+    }else{
+        cout<<N<<" is not a Disarium number"<<endl;
+    }
+    return 0;
+}
