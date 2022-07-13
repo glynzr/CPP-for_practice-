@@ -1,0 +1,27 @@
+#include <iostream>
+#include <cmath>
+#include <string>
+#include <cstdio>
+using namespace std;
+string myFunc(int x,int y){
+    int su=0,a=x;
+    while (x>0){
+        string b=to_string(x);
+        su+= pow(x%10,y+b.length()-1);
+        x/=10;
+    }
+    if (su%a==0){
+        string re=to_string(su/a);
+        return re;
+    }else{
+        return "None";
+    }
+}
+
+int main(){
+    int n,p;
+    cin>>n>>p;
+    printf("%d,%d->",n,p);
+    cout<<myFunc(n,p)<<endl;
+    return 0;
+}
