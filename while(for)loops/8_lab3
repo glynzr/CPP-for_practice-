@@ -1,0 +1,23 @@
+//finds the  average of input numbers if input number is -1 it stops.
+#include <iostream>
+#include <cstdio>
+using namespace std;
+int main(){
+	int n,c=0,su=0;
+	while (true){
+		cin>>n;
+		if (n==-1){
+			break;
+		}else{
+			c+=1;
+			su+=n;
+		}
+	}
+	if (c!=0){
+		float s=su/c;
+		printf("Average=%.3f\n",s);
+	}else{
+		cout<<"Error!"<<endl;
+	}
+	return 0;
+}
