@@ -1,0 +1,14 @@
+//5 from week_3_exercises
+#include <iostream>
+using namespace std;
+int main(){
+	int A=100,a=5,b=7,c=0;
+	for (int i=0;i<(A/a+1);i++){
+		for (int j=0;j<(A/b+1);j++){
+			if (i*a+j*b==A){
+				c++;
+			}
+		}
+	}
+	cout<<c<<endl;
+}
