@@ -1,0 +1,35 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+using namespace std;
+int isBinary(int x){
+	string a=to_string(x);
+	for (int i=0;i<a.length();i++){
+		if (a[i]!='1' and a[i]!='0'){
+			return false;
+		}
+	}
+	return true;
+}
+int toDecimal(int x){
+	int su=0,c=0;
+	while (x>0){
+		su+=(x%10)*pow(2,c);
+		c++;
+		x/=10;
+	}
+	return su;
+}
+
+int main(){
+	int n;
+	while (true){
+		cout<<"Enter the binary number:";
+		cin>>n;
+		if (isBinary(n)){
+			break;
+		}
+	}
+	cout<<"Binary"<<"\t"<<"Decimal"<<endl;
+	cout<<n<<"\t"<<toDecimal(n)<<endl;
+}
